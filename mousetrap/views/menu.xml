@@ -9,7 +9,7 @@
 			<field name='view_mode'>tree,form</field>
 			<field name="help"><![CDATA[<p> Nothing found!</p>]]></field>
 		</record>
-		<menuitem parent="root_menu" id="menu_configurations" action="configurations_action"/>
+		<menuitem parent="root_menu" id="menu_configurations" action="configurations_action" sequence='2'/>
 
 		<record id='catches_action' model='ir.actions.act_window'>
 			<field name='name'>Catches</field>
@@ -17,7 +17,7 @@
 			<field name='view_mode'>tree</field>
 			<field name="help"><![CDATA[<p> Nothing found!</p>]]></field>
 		</record>
-		<menuitem parent="root_menu" id="menu_catches" action="catches_action"/>
+		<menuitem parent="root_menu" id="menu_catches" action="catches_action" sequence='1'/>
 	
 
 	</data>
