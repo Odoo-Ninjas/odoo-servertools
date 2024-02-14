@@ -1,0 +1,6 @@
+model_id:id,group_id:id,id,name,perm_read,perm_write,perm_create,perm_unlink
+model_mousetrap_catches,base.group_system,access_mousetrap_catches_base_system_user,n/a,1,0,0,0
+model_mousetrap_hook,base.group_system,mousetrap_hook_base_system_user,n/a,1,1,1,1
+model_mousetrap_configuration,base.group_system,mousetrap_configuration_base_system_user,n/a,1,1,1,1
+
+

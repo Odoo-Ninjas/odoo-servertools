@@ -1,0 +1,14 @@
+<odoo>
+	<data noupdate='0'>
+		<record id="mousetrap_catches_tree" model="ir.ui.view">
+			<field name="model">mousetrap.catches</field>
+			<field name="arch" type="xml">
+				<tree default_order="" string="" >
+					<field name="create_date"/>
+					<field name="excinfo" />
+					<field name="stacktrace" />
+				</tree>
+			</field>
+		</record>
+	</data>
+</odoo>

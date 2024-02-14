@@ -1,0 +1,57 @@
+<odoo>
+	<data noupdate='0'>
+		<record id="mousetrap_configuration_tree" model="ir.ui.view">
+			<field name="model">mousetrap.configuration</field>
+			<field name="arch" type="xml">
+				<tree default_order="" string="" >
+					<field name="name" />
+				</tree>
+			</field>
+		</record>
+		<record id="mousetrap_configuration_form" model="ir.ui.view">
+			<field name="name">mousetrap.configuration form</field>
+			<field name="model">mousetrap.configuration</field>
+			<field name="arch" type="xml">
+				<form string="">
+					<header></header>
+					<sheet>
+						<div class="oe_title">
+							<h1>
+								<field name="name" colspan="4" class="oe_inline" />
+							</h1>
+						</div>
+						<group>
+							<field name="do_raise"/>
+						</group>
+						<notebook>
+							<page string="Code" name="code">
+								<field name="code" />
+								<div>
+									<h2>Examples</h2>
+									<ul>
+										<li>record.product_qty &amp;gt; 100</li>
+										<li>
+											<pre>if record.xzy &lt; 000:
+	raise Exception('fehler')
+											</pre>
+										</li>
+									</ul>
+								</div>
+							</page>
+							<page string="Trigger" >
+								<field name="method_trigger_ids">
+									<tree editable="bottom">
+										<field name="model_id" />
+										<field name="domain" />
+										<field name="method" />
+										<field name="link_expression" />
+									</tree>
+								</field>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+	</data>
+</odoo>

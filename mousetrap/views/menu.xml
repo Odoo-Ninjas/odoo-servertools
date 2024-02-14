@@ -1,0 +1,24 @@
+<odoo>
+	<data noupdate='0'>
+		<menuitem name="Mousetraps" parent="" id="root_menu" />
+		<!-- web_icon="mousetrap,static/img/logo.png"/> -->
+
+		<record id='configurations_action' model='ir.actions.act_window'>
+			<field name='name'>Configuration</field>
+			<field name='res_model'>mousetrap.configuration</field>
+			<field name='view_mode'>tree,form</field>
+			<field name="help"><![CDATA[<p> Nothing found!</p>]]></field>
+		</record>
+		<menuitem parent="root_menu" id="menu_configurations" action="configurations_action"/>
+
+		<record id='catches_action' model='ir.actions.act_window'>
+			<field name='name'>Catches</field>
+			<field name='res_model'>mousetrap.catches</field>
+			<field name='view_mode'>tree</field>
+			<field name="help"><![CDATA[<p> Nothing found!</p>]]></field>
+		</record>
+		<menuitem parent="root_menu" id="menu_catches" action="catches_action"/>
+	
+
+	</data>
+</odoo>
