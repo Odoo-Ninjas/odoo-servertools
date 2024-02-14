@@ -32,7 +32,6 @@ class Configuration(models.Model):
             except Exception as ex:
 
                 trace = "\n".join(traceback.format_stack())
-                breakpoint()
 
                 with odoo.api.Environment.manage():
                     with odoo.registry(self.env.cr.dbname).cursor() as new_cr:
